@@ -16,6 +16,13 @@ app.use(cors({
   credentials: true
 }));
 
+
+
+//changing by bidhuri for testing
+
+app.get('/',(req,res)=>{
+     res.send("hello world")
+}
 // Log all requests for debugging
 app.use((req, res, next) => {
   console.log(`${new Date().toISOString()} - ${req.method} ${req.url}`);
